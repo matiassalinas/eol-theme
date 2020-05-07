@@ -12,14 +12,15 @@
   </head>
   <body>
     <div class="eol-main-container d-flex w-100 h-100 flex-column">
-        <header class="eol-header mx-auto my-3 px-2 w-100">
+        <!-- HEADER -->
+        <header class="container eol-header mx-auto my-3 px-2 w-100">
             <div class="inner w-100">
-                <a class="eol-header-brand h-100">
+                <a class="eol-header-brand h-100" href="/">
                     <img class="logo my-auto" src="images/logo-eol.png" alt="Logo EOL">
                 </a>
                 <nav class="nav nav-eol-header justify-content-center h-100">
                   <a class="nav-link my-auto" href="#">¿Qué es?</a>
-                  <a class="nav-link my-auto" href="#">Preguntas frecuentes</a>
+                  <a class="nav-link my-auto" href="/faqs.html">Preguntas frecuentes</a>
                   <a class="nav-link my-auto" href="#">Validación de certificados</a>
                   <a class="nav-link my-auto" href="#">Formulario de contacto</a>
                   <div class="nav-link nav-button my-auto">
@@ -28,6 +29,9 @@
                 </nav>
             </div>
         </header>
+        <!-- HEADER -->
+
+        <!-- BANNER -->
         <div class="eol-banner">
             <div id="eol-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -56,9 +60,11 @@
                 </a>
               </div>
         </div>
-      
+        <!-- BANNER -->
+
+        <!-- MAIN CONTENT -->
         <main role="main" class="eol-bg w-100">
-            <div class="eol-content-container my-5 px-2 mx-auto">
+            <div class="container eol-content-container my-5 px-2 mx-auto">
                 <h4 class="eol-categ-title pb-2">
                     Cursos de Pregrado
                 </h4>
@@ -250,7 +256,9 @@
                 </div>
             </div>
         </main>
-        <footer class="eol-footer mt-auto text-center mb-4 mx-auto">
+        <!-- MAIN CONTENT -->
+        <!-- FOOTER -->
+        <footer class="container eol-footer mt-auto text-center mb-4 mx-auto">
                 <div class="row w-100 px-5">
                   <div class="col-sm-4 col-md-2 my-auto p-3">
                     <img src="images/logoSTI.png" class="img-fluid" alt="STI">
@@ -274,8 +282,9 @@
             <p><small>¿Necesitas Ayuda? Contáctate con la <a href="/contact_form">Mesa de Ayuda de EOL</a></small></p>
             <p><small class="text-muted">© Eol. Todos los derechos reservados excepto donde se indica. EdX, Open edX y sus respectivos logos son marcas comerciales o marcas registradas de edX Inc.</small></p>
         </footer>
-      </div>
+        <!-- FOOTER -->
 
+      </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -35,7 +35,7 @@ body {
  */
 .eol-header {
   color: var(--text-grey);
-  max-width: var(--container-max-width);
+   
 }
 
 .eol-header-brand {
@@ -78,7 +78,7 @@ body {
 .eol-footer {
     color: var(--text-grey);
     font-weight: lighter;
-    max-width: var(--container-max-width);
+     
 }
 
 .eol-footer img {
@@ -110,7 +110,7 @@ body {
 }
 
 .eol-content-container {
-    max-width: var(--container-max-width);
+     
 }
 
 .eol-content-container .eol-categ-title {
@@ -199,4 +199,17 @@ body {
 .eol-content-container .eol-courses-list .eol-course-item:hover .card-desc p,
 .eol-content-container .eol-courses-list .eol-course-item:hover .card-desc .card-button {
     transition: opacity 0.7s;
+}
+
+
+/*
+* FAQS
+*/
+
+#eol-faqs h1 {
+    color: var(--primary-color);
+}
+
+#eol-faqs .card-header {
+    cursor: pointer;
 }
