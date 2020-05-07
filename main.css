@@ -213,3 +213,42 @@ body {
 #eol-faqs .card-header {
     cursor: pointer;
 }
+
+/*
+* Login
+*/
+
+#eol-login .login-img {
+    max-width: 500px;
+}
+
+#eol-login .eol-content-container {
+}
+
+#eol-login .login-card {
+    background-color: #ffffff63 !important;
+}
+
+#eol-login h3.login-header {
+    border-bottom: .15rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#eol-login .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+#eol-login .separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--primary-color);
+}
+#eol-login .separator::before {
+    margin-right: .25em;
+}
+#eol-login .separator::after {
+    margin-left: .25em;
+}
