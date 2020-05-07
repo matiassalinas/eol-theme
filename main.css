@@ -164,10 +164,14 @@ body {
 
 .eol-content-container .eol-courses-list .eol-course-item:not(:hover) .card-desc,
 .eol-content-container .eol-courses-list .eol-course-item:not(:hover) .card-desc p,
-.eol-content-container .eol-courses-list .eol-course-item:not(:hover) .card-desc button {
+.eol-content-container .eol-courses-list .eol-course-item:not(:hover) .card-desc .card-button {
     height:0px;
     opacity: 0;
     padding: 0;
+}
+
+.eol-content-container .eol-courses-list .eol-course-item:not(:hover) .card-desc .card-button .btn {
+    display: none;
 }
 
 .eol-content-container .eol-courses-list .eol-course-item .card-desc {
@@ -193,6 +197,6 @@ body {
 }
 
 .eol-content-container .eol-courses-list .eol-course-item:hover .card-desc p,
-.eol-content-container .eol-courses-list .eol-course-item:hover .card-desc button {
+.eol-content-container .eol-courses-list .eol-course-item:hover .card-desc .card-button {
     transition: opacity 0.7s;
 }
