@@ -267,6 +267,10 @@ body {
     color: var(--primary-color);
 }
 
+#eol-certificates .certificates-card {
+    background-color: #ffffff63 !important;
+}
+
 #eol-certificates label {
     color: var(--text-grey);
 }
@@ -275,4 +279,26 @@ body {
     background-color: var(--primary-color);
     border: none;
     border-radius: 0;
+}
+
+/*
+* Contact Form
+*/
+
+#eol-contact h3.contact-header {
+    border-bottom: .15rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#eol-contact .contact-card {
+    background-color: #ffffff63 !important;
+}
+
+#eol-contact p.contact-availability {
+    color: var(--primary-color);
+}
+
+#eol-contact p.contact-info {
+    color: var(--text-grey);
+    letter-spacing: 0.04em;
 }

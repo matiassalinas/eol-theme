@@ -21,8 +21,8 @@
                 <nav class="nav nav-eol-header justify-content-center h-100">
                   <a class="nav-link my-auto" href="/about.html">¿Qué es?</a>
                   <a class="nav-link my-auto" href="/faqs.html">Preguntas frecuentes</a>
-                  <a class="nav-link my-auto active" href="/certificates.html">Validación de certificados</a>
-                  <a class="nav-link my-auto" href="/contact.html">Formulario de contacto</a>
+                  <a class="nav-link my-auto" href="/certificates.html">Validación de certificados</a>
+                  <a class="nav-link my-auto active" href="/contact.html">Formulario de contacto</a>
                   <div class="nav-link nav-button my-auto">
                     <a class="btn btn-primary" href="/login.html" role="button">Iniciar sesión</a>
                   </div>
@@ -31,17 +31,42 @@
         </header>
         <!-- HEADER -->
         <!-- MAIN CONTENT -->
-        <main id="eol-certificates" role="main" class="eol-bg w-100">
+        <main id="eol-contact" role="main" class="eol-bg w-100">
             <div class="container eol-content-container my-5 px-2 mx-auto">
                 <div class="row">
-                    <div class="certificates-card col-11 col-md-8 col-lg-6 mx-auto shadow-lg px-5 py-4 mb-5 bg-white rounded-lg">
-                        <h3 class="certificates-header pb-2 mb-4">Validación de certificados</h3>
+                    <div class="contact-card col-11 col-md-10 col-lg-8 mx-auto shadow-lg px-5 py-4 mb-5 bg-white rounded-lg">
+                        <h3 class="contact-header pb-2 mb-0">Formulario de contacto</h3>
+                        <p class="contact-availability mt-0 text-right"><small>Horario de atención: Lunes a Viernes de 9:00 a 18:00 Hrs</small></p>
+                        <p class="contact-info text-center">Llena el formulario y nuestra mesa de ayuda se pondrá en contacto a la brevedad.</p>
+
                         <form>
                             <div class="form-group">
-                              <label for="inputID">ID de certificado</label>
-                              <input type="text" class="form-control mt-1" id="inputID" aria-describedby="inputID">
+                              <label for="rut">Rut o Pasaporte</label>
+                              <input type="text" class="form-control" id="rut" placeholder="Ingrese un rut válido (12345678-9), o pasaporte (P123456789)">
                             </div>
-                            <button type="submit" class="btn btn-primary mx-auto w-100">Enviar</button>
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="form-group">
+                              <label for="query">Tipo de consulta</label>
+                              <select class="form-control" id="query">
+                                <option disabled="" selected="" value="">Selecciona una opción</option>
+                                <option value="general">General</option>
+                                <option value="curso">Dudas de un curso en específico</option>
+                                <option value="login">Problemas con inicio de sesión</option>
+                                <option value="otro">Otro</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="message">Describa su problema</label>
+                              <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto w-100">Enviar Consulta</button>
                         </form>
                     </div>
                 </div>
