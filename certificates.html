@@ -19,9 +19,9 @@
                     <img class="logo my-auto" src="images/logo-eol.png" alt="Logo EOL">
                 </a>
                 <nav class="nav nav-eol-header justify-content-center h-100">
-                  <a class="nav-link my-auto active" href="/about.html">¿Qué es?</a>
+                  <a class="nav-link my-auto" href="/about.html">¿Qué es?</a>
                   <a class="nav-link my-auto" href="/faqs.html">Preguntas frecuentes</a>
-                  <a class="nav-link my-auto" href="/certificates.html">Validación de certificados</a>
+                  <a class="nav-link my-auto active" href="/certificates.html">Validación de certificados</a>
                   <a class="nav-link my-auto" href="#">Formulario de contacto</a>
                   <div class="nav-link nav-button my-auto">
                     <a class="btn btn-primary" href="/login.html" role="button">Iniciar sesión</a>
@@ -31,20 +31,18 @@
         </header>
         <!-- HEADER -->
         <!-- MAIN CONTENT -->
-        <main id="eol-about" role="main" class="eol-bg w-100">
+        <main id="eol-certificates" role="main" class="eol-bg w-100">
             <div class="container eol-content-container my-5 px-2 mx-auto">
                 <div class="row">
-                    <div class="col-lg-8 px-4 text-justify">
-                        <h1 class="mb-4">¿Qué es EOL?</h1>
-                        <p>Es la plataforma de educación online de la Universidad de Chile.</p>
-                        <p>Su objetivo es contribuir a mejorar el proceso de enseñanza-aprendizaje de los alumnos de la Universidad para todos los niveles de la educación: pregrado, postgrado y educación continua; tanto como complemento de la docencia presencial (b-learning) como 100 por ciento en línea (e-learning).</p>    
-                        <p>Entre las funcionalidades de la plataforma están el publicar videoclases, material escrito y podcast, soportar interacción entre alumnos, y gestionar evaluaciones de todo tipo, desde pruebas de selección múltiple, hasta preguntas de respuesta abierta con evaluación entre pares; tanto para cursos pequeños como de alta convocatoria.</p>
-                        <p>EOL ofrece el servicio de plataforma online a las diferentes unidades académicas, así como también asesoría en la creación de los cursos (diseño instruccional), producción de material (de apoyo/educativo/etc.) y apoyo durante la ejecución de los cursos.</p>
-                        <p>El proyecto EOL es una iniciativa liderada por la DSTI y la Vicerrectoría de Asuntos Académicos, y desarrollada en conjunto con el Centro de Enseñanza y Aprendizaje (CEA), de la Facultad de Economía y Negocios.</p>
-                        
-                    </div>
-                    <div class="col-lg-4 d-none d-lg-block pl-5 my-auto">
-                        <img src="images/about_image.jpg" class="img-fluid" alt="image"/>
+                    <div class="certificates-card col-11 col-md-8 col-lg-6 mx-auto shadow-lg px-5 py-4 mb-5 bg-white rounded-lg">
+                        <h3 class="certificates-header pb-2 mb-4">Validación de certificados</h3>
+                        <form>
+                            <div class="form-group">
+                              <label for="inputID">ID de certificado</label>
+                              <input type="text" class="form-control mt-1" id="inputID" aria-describedby="inputID">
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto w-100">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>

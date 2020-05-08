@@ -215,14 +215,19 @@ body {
 }
 
 /*
+* About
+*/
+
+#eol-about h1 {
+    color: var(--primary-color);
+}
+
+/*
 * Login
 */
 
 #eol-login .login-img {
     max-width: 500px;
-}
-
-#eol-login .eol-content-container {
 }
 
 #eol-login .login-card {
@@ -251,4 +256,23 @@ body {
 }
 #eol-login .separator::after {
     margin-left: .25em;
+}
+
+/*
+* Certificates
+*/
+
+#eol-certificates h3.certificates-header {
+    border-bottom: .15rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+#eol-certificates label {
+    color: var(--text-grey);
+}
+
+#eol-certificates button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 0;
 }
