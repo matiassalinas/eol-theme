@@ -302,3 +302,19 @@ body {
     color: var(--text-grey);
     letter-spacing: 0.04em;
 }
+
+/*
+* Course About
+*/
+
+.eol-course-about-background {
+    min-height: 150px;
+    background-color: var(--primary-color);
+}
+
+#eol-course-about {
+    margin-top: -150px;
+}
+
+#eol-course-about .eol-content-container {
+}
