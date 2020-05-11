@@ -8,6 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>EOL</title>
   </head>
   <body>
@@ -33,27 +38,134 @@
         <!-- MAIN CONTENT -->
         <div class="eol-course-about-background">
         </div>
-        <main id="eol-course-about" role="main" class="eol-bg w-100">
-            <div class="container eol-content-container px-2 mx-auto mt-5">
+        <main id="eol-course-about" role="main" class="eol-bg-white w-100">
+            <div class="container eol-content-container px-2 mx-auto mt-3">
                 <div class="row">
-                    <div class="col-lg-4 order-lg-12 p-3" style="background-color: red; min-height: 500px">
+                    <div class="col-lg-5 col-xl-4 order-lg-12 p-3">
                         <div class="row">
                             <div class="col-md-6 col-lg-12 my-auto">
-                                <div class="course-about-card m-2" style="background-color: white; min-height: 300px;"></div>
+                                <div class="course-about-card course-about-image shadow-lg m-2" style="background-image: url(images/course_example.jpg);"></div>
                             </div>
                             <div class="col-md-6 col-lg-12 my-auto">
-                                <div class="course-about-card m-2" style="background-color: yellow; min-height: 150px;"></div>
+                                <div class="course-about-card shadow-lg m-2 p-3 bg-white">
+                                  <button type="button" class="btn btn-secondary btn-lg btn-block mb-2">Inscribirse</button>
+                                  <table class="table table-borderless mb-0">
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" class="text-left">Código del curso</th>
+                                        <td class="text-right">VET-GU18-19</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-left">Inicio de clases</th>
+                                        <td class="text-right">13 jul, 2019</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" class="text-left">Término de clases</th>
+                                        <td class="text-right">30 abr, 2019</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-8 order-lg-1 p-3" style="background-color: green; min-height: 500px">
-                        <div class="course-about-card m-2" style="background-color: orange; min-height: 475px;"></div>
+                    <div class="col-lg-7 col-xl-8 order-lg-1 p-3">
+                        <div class="course-about-card shadow-lg m-2 p-4 bg-white">
+                          <h1>Bases Económicas y Administrativas 2019</h1>
+                          <p class="course-org font-weight-normal mt-0">Facultad de Ciencias Veterinarias y Pecuarias</p>
+                          <div class="menu btn-group w-100 mt-2 mb-4" role="group" aria-label="Basic example">
+                            <button type="button" data-section="section1" class="btn text-left menu active">Acerca de este curso</button>
+                            <button type="button" data-section="section2" class="btn text-left menu">Nivel y créditos</button>
+                            <button type="button" data-section="section3" class="btn text-left menu">Docentes</button>
+                          </div>
+                          <div class="menu-content-section active" id="section1">
+                            <p>Preguntas como: </p>
+                            <p>¿Cómo incorpora el Médico Veterinario/la Médico Veterinario (M.V.) el problema económico en sus decisiones?</p>
+                            <p>¿Cómo la aplicación de los principios económicos que regulan el mercado y los agentes productivos, optimiza la toma de decisiones profesionales del M.V.?</p>
+                            <p>¿Cómo se aplica el criterio económico para la toma de decisiones técnicas con base en los principios económicos que regulan el mercado y los agentes productivos?</p>
+                            <p>Son las que trataremos de responder a través de este curso.</p>
+                          </div>
+                          <div class="menu-content-section" id="section2">
+                            <p>Esta asignatura es de Segundo año, se dicta en regimen anual.</p>
+                            <p>Tiene 5 créditos asignados</p>
+                          </div>
+                          <div class="menu-content-section" id="section3">
+                            <ul class="list-unstyled author">
+                              <li class="media mb-4">
+                                <img src="images/author_example.jpg" class="align-self-center mr-3 img-fluid" alt="author">
+                                <div class="media-body align-self-center">
+                                  <h5 class="mt-0 mb-1 author-name">Claus Köbrich Grüebler</h5>
+                                  <p class="author-info">Médico Veterinario, U. de Chile; Magíster en Gestión Agropecuaria y Doctor en Gestión Agropecuaria.</p>
+                                </div>
+                              </li>
+                              <li class="media mb-4">
+                                <img src="images/author_example.jpg" class="align-self-center mr-3 img-fluid" alt="author">
+                                <div class="media-body align-self-center">
+                                  <h5 class="mt-0 mb-1 author-name">Felipe Esteban Bravo</h5>
+                                  <p class="author-info mb-0">Profesor Auxiliar del espacio curricular Bases Económicas y Administrativas.<br>Investigador en proyectos relacionados a fomento y desarrollo de la Agricultura Familiar Campesina, con aplicación de metodologías de innovación.</p>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <script>
+                            $(function() {
+                              $(".course-about-card .menu .btn").on("click", function() {
+                                // Clear 'active' class
+                                $(".course-about-card .menu-content-section").removeClass("active");
+                                $(".course-about-card .menu .btn").removeClass("active");
+                                // Set 'active' and show
+                                $(this).addClass("active");
+                                $("#" + $(this).attr("data-section")).addClass("active");
+                              });
+                            });
+                          </script>
+                        </div>
                     </div>
                 </div>
                 <div class="row my-2">
-                    <div class="col-lg-8 p-3" style="background-color: blueviolet; min-height: 200px">
-                        <div class="course-about-card m-2" style="background-color: cyan; min-height: 200px;"></div>
+                    <div class="col-lg-8 p-3">
+                        <div class="course-about-card m-2">
+                          <h3 class="px-4">Preguntas Frecuentes</h3>
+                          <div class="accordion text-justify mt-3" id="accordionFAQS">
+                            <div class="card">
+                                <div class="card-header" id="faq1" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <p class="mb-0">
+                                        ¿A quién debo recurrir si tengo problemas técnicos con la plataforma?
+                                    </p>
+                                </div>
+                                <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordionFAQS">
+                                    <div class="card-body">
+                                        En caso de tener problemas de conexión con la plataforma u otras dificultades técnicas, puede escribir un correo a eol-ayuda@uchile.cl, y la mesa de ayuda de la oficina de Educación Online de la Universidad de Chile.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="faq2" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                  <p class="mb-0">
+                                      ¿Qué navegador debo usar para que la plataforma funcione?
+                                  </p>
+                              </div>
+                              <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordionFAQS">
+                                  <div class="card-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet enim eget sem fringilla iaculis. Nulla facilisi. Quisque massa leo, accumsan ut ligula rhoncus, faucibus tincidunt lacus. Etiam feugiat sem ut dui convallis, quis convallis lacus consectetur. 
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="faq3" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse2">
+                                  <p class="mb-0">
+                                      ¿A quién debo recurrir si tengo problemas académicos con el curso?
+                                  </p>
+                              </div>
+                              <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#accordionFAQS">
+                                  <div class="card-body">
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet enim eget sem fringilla iaculis. Nulla facilisi. Quisque massa leo, accumsan ut ligula rhoncus, faucibus tincidunt lacus. Etiam feugiat sem ut dui convallis, quis convallis lacus consectetur. 
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -87,10 +199,5 @@
         <!-- FOOTER -->
 
       </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

@@ -1,6 +1,9 @@
 :root {
-    --primary-color: #059CE3;
+    --primary-color: #009bdd;
+    --primary-color-hover: #0278ab;
     --primary-2-color: #C3DDE8;
+    --secondary-color: #ff6422;
+    --secondary-color-hover: #ec500d;
     --text-grey: #515151;
     --container-max-width: 1100px;
 }
@@ -20,9 +23,33 @@ body {
   display: flex;
 }
 
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: var(--primary-color-hover) !important;
+    border-color: var(--primary-color-hover) !important;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+    background-color: var(--secondary-color-hover) !important;
+    border-color: var(--secondary-color-hover) !important;
 }
 
 .btn-outline-light {
@@ -103,6 +130,14 @@ body {
 
 .eol-bg {
     background-image: url(images/bg-eol.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.eol-bg-white {
+    background-image: url(images/bg-eol-white.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -317,4 +352,63 @@ body {
 }
 
 #eol-course-about .eol-content-container {
+}
+
+#eol-course-about .course-about-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+#eol-course-about .course-about-card {
+    border-radius: 7px;
+    color: var(--text-grey);
+}
+
+#eol-course-about .course-about-card table{
+    font-size: 0.9em;
+}
+
+#eol-course-about .course-about-card h1 {
+    color: var(--primary-color);
+}
+#eol-course-about .course-about-card p.course-org {
+    color: var(--primary-color);
+}
+
+#eol-course-about .course-about-card .menu {
+    border: none;
+    border-radius: 0px;
+    border-bottom: .05rem solid var(--text-grey);
+}
+
+#eol-course-about .course-about-card .menu.active {
+    margin-bottom: -.12rem;
+    border-bottom: .30rem solid var(--text-grey);
+    font-weight: bold;
+}
+
+#eol-course-about .course-about-card .menu:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#eol-course-about .course-about-card .menu-content-section {
+    display: none;
+    padding: 10px;
+    text-align: justify;
+}
+
+#eol-course-about .course-about-card .menu-content-section.active {
+    display: block;
+}
+
+#eol-course-about .course-about-card .menu-content-section .author img {
+    max-width: 120px;
+}
+
+#eol-course-about .course-about-card .card-header {
+    cursor: pointer;
 }
