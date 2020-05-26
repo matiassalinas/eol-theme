@@ -19,8 +19,6 @@ body {
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .row {
@@ -86,15 +84,6 @@ body {
 .nav-eol-header a.nav-link:hover {
     border-color: var(--primary-color);
     color: var(--primary-color);
-}
-
-@media (min-width: 48em) {
-  .eol-header-brand {
-    float: left;
-  }
-  .nav-eol-header {
-    float: right;
-  }
 }
 
 
